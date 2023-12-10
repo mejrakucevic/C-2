@@ -1,0 +1,2 @@
+
+        upisNiza(niz);
