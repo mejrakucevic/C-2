@@ -2113,86 +2113,123 @@
 // Написати funkciju za upis i  ispis niza, funckiju za izracunavanje srednje vrednosti neparnih brojeva, funkciju koja pronalazi najveci parni elemenat, funkciju koja vraca elemenat ako postoji (korisnik unosi zeljeni element)
 
 
-void upisNiza(int niz[], int n) {
+// void upisNiza(int niz[], int n) {
 
-    for (int i = 1; i <= n; i++) {
-        if (n > 10) {
-            printf("PISALO JE MANJE OD 10!");
-            break;
-        }
+//     for (int i = 1; i <= n; i++) {
+//         if (n > 10) {
+//             printf("PISALO JE MANJE OD 10!");
+//             break;
+//         }
+//         printf("Unesite %d.clan: ", i);
+//         scanf("%d", &niz[i]);
+//     }
+// }
+
+// void ispisNiza(int niz[], int n) {
+//     printf("Elementi niza su: ");
+//     for (int i = 1; i <= n; i++) {
+//         printf("%d ", niz[i]);
+//     }
+//     printf("\n");
+// }
+
+
+// int najveciParniElement(int niz[], int n) {
+//     int max = 0;
+
+//     for (int i = 1; i <= n; i++) {
+//         if (niz[i] % 2 == 0) {
+//             if (niz[i] > max) {
+//                 max = niz[i];
+//             }
+//         }
+//     } return max;
+// }
+// int vracaBr(int niz[], int n, int broj) {
+    
+//     int postoji;
+    
+
+//     for (int i = 1; i <= n; i++) {
+//         if (niz[i] == broj) {
+//             return i;
+//         } else printf("broj ne psotoji");
+//     }
+// }
+
+// double srv_neparnih( int niz[], int n){
+//     double suma = 0;
+//     int brojac = 0;
+//     for(int i = 0; i < n; i++){
+//         if(niz[i] % 2 == 1){
+//             suma = suma + niz[i];
+//             brojac++;
+//         }
+//     }
+//     if(brojac > 0){
+//         return suma / brojac;
+//     }
+//     return 0;
+// }
+
+
+// int main() {
+//         int niz[5];
+//         int n = sizeof(niz) / sizeof(int);
+//         int broj, postoji;
+//         // int v = sizeof(niz) / sizeof(int);
+
+//         upisNiza(niz, n);
+//         ispisNiza(niz, n);
+        
+//         srv_neparnih(niz, n);
+//         printf("Unesite zeljeni broj: ");
+//     scanf("%d", &broj);
+//         printf("%d", vracaBr(niz, n, broj));
+//         // if (postoji == 0) {
+//         //     printf("Broj %d postoji", broj);
+//         // } else printf("Broj ne postoji");
+//         // printf("\nSrednja vrednost: %.2lf", srv_neparnih(niz, n));
+
+//         // printf("\nNajveci parni broj niza jeste: %d", najveciParniElement(niz, n));
+//     // printf("Srednja vrednost neparnih brojeva je: %.2lf\n", sred);
+    
+//          return 0;
+// }
+
+// Napisati program koji Ispisuje 10 unetih brojeva unazad iz nekog niza :
+
+int upisNiza(int niz[], int n) {
+    int broj;
+    int i;
+    printf("Unesite broj brojeva niza: ");
+    scanf("%d", &broj);
+
+    for (i = 1; i <= n; i++) {
         printf("Unesite %d.clan: ", i);
         scanf("%d", &niz[i]);
     }
-}
-
-void ispisNiza(int niz[], int n) {
-    printf("Elementi niza su: ");
-    for (int i = 1; i <= n; i++) {
-        printf("%d ", niz[i]);
-    }
-    printf("\n");
-}
-
-
-int najveciParniElement(int niz[], int n) {
-    int max = 0;
-
-    for (int i = 1; i <= n; i++) {
-        if (niz[i] % 2 == 0) {
-            if (niz[i] > max) {
-                max = niz[i];
-            }
-        }
-    } return max;
-}
-int vracaBr(int niz[], int n, int broj) {
+      
     
-    int postoji;
+   
     
-
-    for (int i = 1; i <= n; i++) {
-        if (niz[i] == broj) {
-            return i;
-        } else printf("broj ne psotoji");
-    }
 }
-
-double srv_neparnih( int niz[], int n){
-    double suma = 0;
-    int brojac = 0;
-    for(int i = 0; i < n; i++){
-        if(niz[i] % 2 == 1){
-            suma = suma + niz[i];
-            brojac++;
-        }
-    }
-    if(brojac > 0){
-        return suma / brojac;
-    }
-    return 0;
-}
-
-
 int main() {
-        int niz[5];
-        int n = sizeof(niz) / sizeof(int);
-        int broj, postoji;
-        // int v = sizeof(niz) / sizeof(int);
+    int i;
+     int niz[10];
 
-        upisNiza(niz, n);
-        ispisNiza(niz, n);
-        
-        srv_neparnih(niz, n);
-        printf("Unesite zeljeni broj: ");
-    scanf("%d", &broj);
-        printf("%d", vracaBr(niz, n, broj));
-        // if (postoji == 0) {
-        //     printf("Broj %d postoji", broj);
-        // } else printf("Broj ne postoji");
-        // printf("\nSrednja vrednost: %.2lf", srv_neparnih(niz, n));
+    int n = sizeof(niz)/sizeof(0);
+    upisNiza(niz, n);
+   
+    printf("Unazad: ");
+     for (i = n; i >= 1; i--) {
+        printf("%d ", niz[i]);
 
-        // printf("\nNajveci parni broj niza jeste: %d", najveciParniElement(niz, n));
-    // printf("Srednja vrednost neparnih brojeva je: %.2lf\n", sred);
-    
-         return 0;
+     } 
+
 }
+
+// Написати програм sa funkcijom који учитава низ од максимално 50 бројева и рачуна њихов просек
+
+
+//  Написати програм sa funckijom који учитава низ од максимално 50 бројева и рачуна њихов максимум и минимум
