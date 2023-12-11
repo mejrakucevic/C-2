@@ -2199,37 +2199,68 @@
 
 // Napisati program koji Ispisuje 10 unetih brojeva unazad iz nekog niza :
 
-int upisNiza(int niz[], int n) {
-    int broj;
-    int i;
-    printf("Unesite broj brojeva niza: ");
-    scanf("%d", &broj);
+// int upisNiza(int niz[], int n) {
+//     int broj;
+//     int i;
+//     printf("Unesite broj brojeva niza: ");
+//     scanf("%d", &broj);
 
-    for (i = 1; i <= n; i++) {
-        printf("Unesite %d.clan: ", i);
-        scanf("%d", &niz[i]);
-    }
+//     for (i = 1; i <= n; i++) {
+//         printf("Unesite %d.clan: ", i);
+//         scanf("%d", &niz[i]);
+//     }
       
     
    
     
-}
-int main() {
-    int i;
-     int niz[10];
+// }
+// int main() {
+//     int i;
+//      int niz[10];
 
-    int n = sizeof(niz)/sizeof(0);
-    upisNiza(niz, n);
+//     int n = sizeof(niz)/sizeof(0);
+//     upisNiza(niz, n);
    
-    printf("Unazad: ");
-     for (i = n; i >= 1; i--) {
-        printf("%d ", niz[i]);
+//     printf("Unazad: ");
+//      for (i = n; i >= 1; i--) {
+//         printf("%d ", niz[i]);
 
-     } 
+//      } 
 
-}
+// }
+// Proveriti da li u nizu ima više pozitivnih ili negativnih brojeva.
 
-// Написати програм sa funkcijom који учитава низ од максимално 50 бројева и рачуна њихов просек
+//  int unosNiza(int niz[], int n) {
+
+//     for (int i = 0; i < n; i++) { 
+//      printf("Unesite broj niza: ");
+//      scanf("%d", &niz[i]); }
+  
+//  }
+
+// int provera(int niz[], int n) {
+//     int p=0;
+//     int ne=0;
+
+//     for (int i = 0; i < n; i++) {
+//         if (niz[i] % 2 == 0) {
+//             p+=1;
+//         } else {
+//             ne +=1;
+//         }
+//     } printf("Poz: %d \n Neg: %d", p, ne);
+// }
+// int main() {   
+//     int n;
+//     printf("Unesite broj elemeneta niza: ");
+//     scanf("%d", &n);
+//  int niz[5];
+//     unosNiza(niz, n);
+//     provera(niz, n);
+
+
+// }
+
 
 
 //  Написати програм sa funckijom који учитава низ од максимално 50 бројева и рачуна њихов максимум и минимум
