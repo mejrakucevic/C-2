@@ -2263,4 +2263,46 @@
 
 
 
-//  Написати програм sa funckijom који учитава низ од максимално 50 бројева и рачуна њихов максимум и минимум
+//  Написати програм sa funckijom који учитава низ од максимално 10 бројева и рачуна њихов максимум и минимум
+int upisNiza(int niz[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("Unesite %d.clan: ", i+1);
+        scanf("%d", &niz[i]);
+    }
+}
+
+int maxNiza(int niz[], int n, int max) {
+    max = niz[0];
+    for (int i = 0; i < n; i++) {
+        if (max < niz[i]) {
+            max = niz[i];
+        }
+    } printf("najveci broj je : %d", max);
+
+}
+
+int minNiza(int niz[], int n, int min) {
+    min = niz[0];
+    for (int i = 0; i < n; i++) {
+        if (niz[i] < min) {
+            min = niz[i];
+            
+        }
+    } printf("\nnajmanji broj je : %d", min);
+
+}
+
+
+int main() {
+    int niz[10];
+    int n;
+    printf("Unesite broj brojeva niza: ");
+    scanf("%d", &n);
+int max;
+    int min;
+    upisNiza(niz, n);
+    maxNiza(niz, n, max);
+    minNiza(niz, n, min);
+
+    
+}
