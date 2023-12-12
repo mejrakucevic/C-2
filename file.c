@@ -643,50 +643,69 @@
 
 // Unos niza i prikaz unetog niza
 
-void unosNiza(int niz[]) {
-  int n;
-  printf("Unesite broj clanova niza (<5): ");
-  scanf("%d", &n);
+// void unosNiza(int niz[]) {
+//   int n;
+//   printf("Unesite broj clanova niza (<5): ");
+//   scanf("%d", &n);
 
-  for (int i = 1; i <= n; i++) {
-    if (n > 5) { 
-     printf("MORA <5 !!!!!!!");
-     break;
-   } else { 
-    printf("Unesite clan %d: ", i);
-    scanf("%d", &niz[i]);
-    } }
-} 
+//   for (int i = 1; i <= n; i++) {
+//     if (n > 5) { 
+//      printf("MORA <5 !!!!!!!");
+//      break;
+//    } else { 
+//     printf("Unesite clan %d: ", i);
+//     scanf("%d", &niz[i]);
+//     } }
+// } 
 
-void prikazNiza(int niz[]) {
-  int n;
-    for (int i = 1; i <= n; i++) {
-      printf("\n%d", niz[i]);
-    }
-}
-// provera postojanja odredjenog broja u nizu
-int postojanjeBroja(int niz[], int n) {
-  int broj;
-  printf("Unesite broj koji trazite: ");
-  scanf("%d", &broj);
+// void prikazNiza(int niz[]) {
+//   int n;
+//     for (int i = 1; i <= n; i++) {
+//       printf("\n%d", niz[i]);
+//     }
+// }
+// // provera postojanja odredjenog broja u nizu
+// int postojanjeBroja(int niz[], int n) {
+//   int broj;
+//   printf("Unesite broj koji trazite: ");
+//   scanf("%d", &broj);
 
-  for (int i = 1; i <= n; i++) {
-    if (niz[i] == broj) {
-        printf("Broj postoji");
-        break;
-    }  else printf("Broj ne postoji!");
-       break;
-  } 
-  } 
+//   for (int i = 1; i <= n; i++) {
+//     if (niz[i] == broj) {
+//         printf("Broj postoji");
+//         break;
+//     }  else printf("Broj ne postoji!");
+//        break;
+//   } 
+//   } 
 
 
+
+// int main() {
+//   int n, postoji, broj;
+//   int niz[5];
+//   unosNiza(niz);
+//   // prikazNiza(niz);
+//   printf("%d", postojanjeBroja(niz, n));
+
+//   return 0;
+// }
+
+
+
+typedef struct {
+    int age;
+    int salary;
+
+ } User ;
 
 int main() {
-  int n, postoji, broj;
-  int niz[5];
-  unosNiza(niz);
-  // prikazNiza(niz);
-  printf("%d", postojanjeBroja(niz, n));
 
-  return 0;
+    User marko;
+
+    marko.age = 24;
+    marko.salary = 3500;
+
+   printf("age: %d, salary: %d", marko.age, marko.salary);
 }
+

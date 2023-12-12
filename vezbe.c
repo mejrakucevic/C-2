@@ -2303,20 +2303,5 @@
     
 // }
 
-  struct reperi {
-        char ime[18];
-        int godine;
-    };
-
-int main() {
-    struct reperi k;
-    strcpy(k.ime, "Kendrick Lamar");
-    k.godine = 33;
-
-    printf("He is %d years old, and his name is %s", k.godine, k.ime);
-    return 0;
-
-}
-
 
   
