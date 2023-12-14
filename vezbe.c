@@ -2306,38 +2306,79 @@
 // Написати програм за унос елемената целобројне матрице димензија n x n.
 // Израчунати суму првог реда матрице. (red = columns = j)
   
-void unosMatrice(int niz[10][10], int n) {
-        for (int i = 0; i < n; i++) {
-                for (int j = 0; j< n; j++) {
-                        printf("Unesite brojeve kvadratne matrice: ");
-                        scanf("%d", &niz[i][j]);
-                }
-        }
-}
-int prikazMatrice(int niz[10][10], int n) {
-        for (int i = 0; i < n; i++) {
-                printf("\n");
-                for (int j = 0; j < n; j++) {
-                        printf("%d ", niz[i][j]);
-                }
-        }
-}
-int sumaPrvogReda(int niz[10][10], int n) {
-        int suma = 0;
-        int j = 0;
+// void unosMatrice(int niz[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j< n; j++) {
+//                         printf("Unesite brojeve kvadratne matrice: ");
+//                         scanf("%d", &niz[i][j]);
+//                 }
+//         }
+// }
+// int prikazMatrice(int niz[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", niz[i][j]);
+//                 }
+//         }
+// }
+// int sumaPrvogReda(int niz[10][10], int n) {
+//         int suma = 0;
+//         int j = 0;
 
-        for (j = 0; j < n; j++) {
-                suma = suma + niz[0][j];
-        } return suma;
-}
-  int main() {
-        int niz[10][10];
-        int n, suma, i, j;
-        printf("Unesi dimenziju matrice: "); // kvadratna matrica
-        scanf("%d", &n);
+//         for (j = 0; j < n; j++) {
+//                 suma = suma + niz[0][j];
+//         } return suma;
+// }
+//   int main() {
+//         int niz[10][10];
+//         int n, suma, i, j;
+//         printf("Unesi dimenziju matrice: "); // kvadratna matrica
+//         scanf("%d", &n);
 
-        unosMatrice(niz, n);
-        prikazMatrice(niz, n);
-        printf("\nSuma je: %d", sumaPrvogReda(niz, n));
-        return 0;
-  }
+//         unosMatrice(niz, n);
+//         prikazMatrice(niz, n);
+//         printf("\nSuma je: %d", sumaPrvogReda(niz, n));
+//         return 0;
+//   }
+
+
+
+
+// 2.Написати програм за унос елемената целобројне матрице димензија n x n.
+// Израчунати суму прве колоне матрице. (kolona - row - i)
+
+// void unosMat(int niz[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite broj matrice: ");
+//                         scanf("%d", &niz[i][j]);
+//                 }
+//         }
+// }
+// int prikazMat(int niz[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++){
+//                         printf("%d ", niz[i][j]);
+//                 }
+//          }
+// }
+
+// int sumaPrveKolone(int niz[10][10], int n) {
+//         int suma = 0;
+//         for (int i = 0; i < n; i++) {
+//                 suma += niz[i][0];
+//         } return suma;
+// }
+// int main() {
+
+//         int niz[10][10];
+//         int n, suma;
+//         printf("Unesite dimenzije matrice nxn: ");
+//         scanf("%d", &n);
+
+//         unosMat(niz, n);
+//         prikazMat(niz, n);
+//         printf("\nSuma: %d", sumaPrveKolone(niz, n));    
+// }
