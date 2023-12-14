@@ -2346,7 +2346,8 @@
 
 
 // 2.Написати програм за унос елемената целобројне матрице димензија n x n.
-// Израчунати суму прве колоне матрице. (kolona - row - i)
+// a)Израчунати суму прве колоне матрице. (kolona - row - i)
+// b) Израчунати суму елемената матрице на главној дијагонали.
 
 // void unosMat(int niz[10][10], int n) {
 //         for (int i = 0; i < n; i++) {
@@ -2371,6 +2372,13 @@
 //                 suma += niz[i][0];
 //         } return suma;
 // }
+
+// int sumaDijagonale(int niz[10][10], int n) {
+//         int suma = 0;
+//         for (int i = 0; i < n; i++) {
+//                 suma += niz[i][i];
+//         } return suma;
+// }
 // int main() {
 
 //         int niz[10][10];
@@ -2381,4 +2389,46 @@
 //         unosMat(niz, n);
 //         prikazMat(niz, n);
 //         printf("\nSuma: %d", sumaPrveKolone(niz, n));    
+//         printf("\nSuma dijagonale: %d", sumaDijagonale(niz, n));
 // }
+
+// 4.Написати програм за унос елемената целобројне матрице димензија n x n.
+// Претворити све елементе првог реда у број 3.    red - row - i
+
+
+int unosMat(int niz[10][10], int n) {
+        for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        printf("Unesite broj: ");
+                        scanf("%d", &niz[i][j]);
+                }
+        }
+}
+int pretvoriElemente(int niz[10][10], int n) {
+        int j;
+        int i = 0;
+                for (j = 0; j < n; j++) {
+                      niz[i][j] = 3;
+                } 
+                
+        printf("Novi niz: ");
+       for (int i = 0; i < n; i++) { 
+        printf("\n");
+          for (int j = 0; j < n; j++) {
+        printf("%d ", niz[i][j]);
+    } } }
+
+
+int main() {
+        int niz[10][10];
+        int n;
+        int noviNiz[10][10];
+        
+        
+        printf("Unesite velicinu matrice nxn: ");
+        scanf("%d", &n);
+        unosMat(niz, n);
+        pretvoriElemente(niz, n);
+        
+       return 0;
+}
