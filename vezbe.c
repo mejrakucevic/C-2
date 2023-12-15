@@ -2396,39 +2396,251 @@
 // Претворити све елементе првог реда у број 3.    red - row - i
 
 
-int unosMat(int niz[10][10], int n) {
-        for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                        printf("Unesite broj: ");
-                        scanf("%d", &niz[i][j]);
-                }
-        }
-}
-int pretvoriElemente(int niz[10][10], int n) {
-        int j;
-        int i = 0;
-                for (j = 0; j < n; j++) {
-                      niz[i][j] = 3;
-                } 
+// int unosMat(int niz[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite broj: ");
+//                         scanf("%d", &niz[i][j]);
+//                 }
+//         }
+// }
+// int pretvoriElemente(int niz[10][10], int n) {
+//         int j;
+//         int i = 0;
+//                 for (j = 0; j < n; j++) {
+//                       niz[i][j] = 3;
+//                 } 
                 
-        printf("Novi niz: ");
-       for (int i = 0; i < n; i++) { 
-        printf("\n");
-          for (int j = 0; j < n; j++) {
-        printf("%d ", niz[i][j]);
-    } } }
+//         printf("Novi niz: ");
+//        for (int i = 0; i < n; i++) { 
+//         printf("\n");
+//           for (int j = 0; j < n; j++) {
+//         printf("%d ", niz[i][j]);
+//     } } }
 
 
-int main() {
-        int niz[10][10];
-        int n;
-        int noviNiz[10][10];
+// int main() {
+//         int niz[10][10];
+//         int n;
+//         int noviNiz[10][10];
         
         
-        printf("Unesite velicinu matrice nxn: ");
-        scanf("%d", &n);
-        unosMat(niz, n);
-        pretvoriElemente(niz, n);
+//         printf("Unesite velicinu matrice nxn: ");
+//         scanf("%d", &n);
+//         unosMat(niz, n);
+//         pretvoriElemente(niz, n);
         
-       return 0;
-}
+//        return 0;
+// }
+
+// 5.Написати програм за унос елемената целобројне матрице димензија n x n.
+// Претворити све елементе прве колоне у број 3.
+
+// int unosMat(int mat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite element matrice: ");
+//                         scanf("%d", &mat[i][j]);
+//                 }
+//         }
+// }
+// int promVredPrveKol(int mat[10][10], int n) {  
+//      int j;
+//      int i = 0;
+//         // kolona - column - j
+//         for (j = 0; j < n; j++) {
+//                 mat[i][j] = 3;
+//         }  
+//  for (i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", mat[i][j]);
+//                 }
+//         }
+// }
+
+// int prikazMat(int mat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", mat[i][j]);
+//                 }
+//         }
+// }
+// int main() {
+//         int mat[10][10];
+//         int n;
+//         printf("Unesite velicinu kvadratne matrice: ");
+//         scanf("%d", &n);
+
+//         unosMat(mat, n);
+//         //prikazMat(mat, n);
+//         promVredPrveKol(mat, n);
+
+
+//         return 0;
+// }
+
+// Napisati 2 funkcije, za unis mxn matrice i prikaz te matrice
+
+// void unosMat(int mat[10][10], int n, int m) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < m; j++) {
+//                         printf("Unesite elemente matrice: ");
+//                         scanf("%d", &mat[i][j]);
+//                 }
+//         }
+
+// }
+
+// int prikazMat(int mat[10][10], int n, int m) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < m; j++) {
+//                         printf("%d ", mat[i][j]);
+//                 }
+//         }
+// }
+
+// int main(){
+//         int mat[10][10];
+//         int m, n;
+//         printf("Unesite broj redova matrice: ");
+//         scanf("%d", &m);
+//         printf("\nUnesite broj kolona matrice: ");
+//         scanf("%d", &n);
+
+//         unosMat(mat, n, m);
+//         prikazMat(mat, n, m);
+
+//         return 0;
+
+// }
+
+// Написати програм за унос елемената целобројне матрице димензија n x n.
+// Заменити све елементе главне дијагонале са бројем 3
+
+// void unosMat(int mat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite elemente matrice: ");
+//                         scanf("%d", &mat[i][j]);
+//                 }
+//         }
+// }
+
+// int zamenaMesta(int mat[10][10], int n) {
+//         int i,j;
+//         for (i = 0; i < n; i++) {
+//                 mat[i][i] = 3;
+//         }
+
+//         for (i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", mat[i][j]);
+//                 }
+//         }
+// }
+
+// int main() {
+//         int mat[10][10];
+//         int n;
+//         printf("Unesite dimenziju nxn matrice: ");
+//         scanf("%d", &n);
+
+//         unosMat(mat, n);
+//         zamenaMesta(mat, n);
+//         return 0;
+
+// }
+
+//  Написати програм за унос елемената целобројне матрице димензија n x n.
+// a)  Пронаћи максималан елемент матрице и приказати га.
+//  b) Пронаћи минималан елемент матрице и приказати га.
+
+// void unosMat(int mat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite leemente matrice: ");
+//                         scanf("%d", &mat[i][j]);
+//                 }
+//         }
+// }
+
+// int maxMatrice(int mat[10][10], int n) {
+//         int maks = mat[0][0];
+//          for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         if (maks < mat[i][j]) {
+//                                 maks = mat[i][j];
+//                         }
+//                 }
+//         } printf("Najveci element matricej este: %d", maks);
+// }
+
+// int minMatrice(int mat[10][10], int n) {
+//         int min = mat[0][0];
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         if (min > mat[i][j]) {
+//                                 min = mat[i][j];
+//                         }
+//                 }
+//         } printf("Najmanji element matricej este: %d", min);
+
+// }
+// int main() {
+//         int mat[10][10];
+//         int n, maks;
+//         printf("Unersite velicinu matrice: ");
+//         scanf("%d", &n);
+
+//         unosMat(mat, n);
+//         maxMatrice(mat, n);
+//         minMatrice(mat, n);
+// }
+
+
+// Написати програм за унос елемената целобројне матрице димензија n x n.d
+// Пронаћи максималан елемент главне дијагонале и приказати га.
+
+// void unosMat(int mat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite leemente matrice: ");
+//                         scanf("%d", &mat[i][j]);
+//                 }
+//         }
+// }
+// void prikazMat(int mat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", mat[i][j]);
+//                 }
+//         }
+// }
+// int maxElDijagonale(int mat[10][10], int n) {
+//         int max = mat[0][0];
+//         for (int i = 0; i < n; i++) {   
+//                         if (mat[i][i] > max) {
+//                                 max = mat[i][i];
+//                         }
+//         } 
+//         printf("max je: %d", max);
+//         return max; 
+// }
+// int main() {
+//         int mat[10][10];
+//         int n, max;
+
+//         printf("Unersite velicinu matrice: ");
+//         scanf("%d", &n);
+        
+//         unosMat(mat, n);
+//         prikazMat(mat, n);
+//         maxElDijagonale(mat, n);
+
+//         return 0;
+// }
