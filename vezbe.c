@@ -2986,7 +2986,42 @@
 // }
 // ----------------------------------------------------------------------------------------------------------------------------------
 
-// 5. Write a program in C to count the total number of duplicate elements in an array.
+// 5. Napišite program na jeziku C koji će brojati ukupan broj dupliranih elemenata u nizu.
+
+// int unosIprikazNiza(int niz[10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("Unesite %d. element niza: ", i+1);
+//                 scanf("%d", &niz[i]);
+//         }
+
+//                 printf("Niz: ");
+//          for (int i = 0; i < n; i++) {
+//                 printf("%d ", niz[i]);
+//         }
+// }
+// int proveraDuplikata(int niz[10], int n) {
+//         int d = 0;
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = i+1; j < n; j++) { 
+//                 if (niz[i] == niz[j]) {
+//                         d += 1;
+
+//                 } }
+//         } return d;
+// }
+
+// int main() {
+//         int niz[10];
+//         int n, d0;
+//         printf("Unesite broj elemenata u nizu (<10): ");
+//         scanf("%d", &n);
+
+//         unosIprikazNiza(niz, n);
+        
+//         printf("Broj duplikata: %d", proveraDuplikata(niz, n));
+
+
+// }
 // ----------------------------------------------------------------------------------------------------------------------------------
 
 // 10. Write a program in C to separate odd and even integers into separate arrays.
