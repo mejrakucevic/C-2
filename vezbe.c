@@ -2700,3 +2700,53 @@
 // }
 
 // // Napisati program za zbir 2 matrice mxn dimenzija
+
+// C Program to Find Transpose of a Matrix (zamena kolona sa redovima) transponovana matrica
+
+// int unosMat(int mat[10][10], int n ){
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         printf("Unesite element matrice: ");
+//                         scanf("%d", &mat[i][j]);
+//                 }
+//         }
+// }
+
+// int prikazMat(int mat[10][10], int n) {   
+//           for (int i = 0; i<n;i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", mat[i][j]);
+//                 }
+//         } 
+//         }
+
+// int transponovanaMat(int mat[10][10], int tMat[10][10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 for (int j = 0; j < n; j++) {
+//                         tMat[i][j] = mat[j][i];
+//                 }
+//         } printf("\n");
+//         printf("\nTransponovana matrica: \n");
+
+//         for (int i = 0; i<n;i++) {
+//                 printf("\n");
+//                 for (int j = 0; j < n; j++) {
+//                         printf("%d ", tMat[i][j]);
+//                 }
+//         } 
+//         }
+
+// int main() {
+//         int mat[10][10];
+//         int tMat[10][10];
+//         int n;
+//         printf("Unesite dimenzije matrice nxn: ");
+//         scanf("%d", &n);
+
+//         unosMat(mat, n);
+//         prikazMat(mat, n);
+//         transponovanaMat(mat, tMat, n);
+        
+//         return 0;
+// }
