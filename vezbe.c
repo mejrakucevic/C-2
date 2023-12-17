@@ -2936,8 +2936,6 @@
 //        for (int i = 0; i < n; i++) {
 //         printf("%d ", arr[i]);
 //        }
-
-
 // }
 // int zbir(int arr[10], int n) {
 //         int suma = 0;
@@ -2961,6 +2959,31 @@
 // ----------------------------------------------------------------------------------------------------------------------------------
 
 ////  Write a program in C to copy the elements of one array into another array.
+
+// int unosIprikazNiza(int arr[10], int newArr[10], int n) {
+//         int i;
+//         for (i = 0; i < n; i++) {
+//                 printf("Unesite %d.element niza: ", i+1);
+//                 scanf("%d", &arr[i]);
+//         }
+         
+//        // kopiranje elemenata arr u newArr
+//        for (i = 0; i < n; i++) {
+//          newArr[i] = arr[i];
+//         printf("%d ", newArr[i]);
+//        }
+// }
+
+// int main() {
+//         int arr[10];
+//         int newArr[10];
+//         int n, suma;
+//         printf("Unesite broj elemenata u nizu: ");
+//         scanf("%d", &n);
+
+//         unosIprikazNiza(arr, newArr, n);
+//         return 0;
+// }
 // ----------------------------------------------------------------------------------------------------------------------------------
 
 // 5. Write a program in C to count the total number of duplicate elements in an array.
