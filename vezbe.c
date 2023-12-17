@@ -2699,8 +2699,6 @@
 
 // }
 
-// // Napisati program za zbir 2 matrice mxn dimenzija
-
 // C Program to Find Transpose of a Matrix (zamena kolona sa redovima) transponovana matrica
 
 // int unosMat(int mat[10][10], int n ){
@@ -2750,3 +2748,62 @@
         
 //         return 0;
 // }
+
+// C Program to Multiply Two Matrices
+int unosMat1(int mat1[10][10], int n ){
+        printf("Unos prve matrice: \n");
+        for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        printf("Unesite element matrice br.1: ");
+                        scanf("%d", &mat1[i][j]);
+                }
+        }
+}
+int unosMat2(int mat2[10][10], int n ) {
+        printf("\nUnos druge matrice: \n");
+        for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        printf("Unesite elemente matrice br.2: ");
+                        scanf("%d", &mat2[i][j]);
+                }
+        }
+}
+int mnozenjeMat(int mat1[10][10], int mat2[10][10], int mat3[10][10], int n) {
+        printf("\n");
+          for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                          mat3[i][j] = 0;
+            for (int k = 0; k < n; k++) {
+                mat3[i][j] += mat1[i][k] * mat2[k][j];
+            }
+                       
+
+                } }
+
+        for (int i = 0; i < n; i++) {
+                printf("\n");
+                for (int j = 0; j < n; j++) {
+                        printf("%d ", mat3[i][j]);
+                } }
+        
+}
+
+int main() {
+        int mat1[10][10];
+        int mat2[10][10];
+        int mat3[10][10];
+        
+        int n;
+        printf("Unesite dimenzije matrice: ");
+        scanf("%d", &n);
+        unosMat1(mat1, n);
+        unosMat2(mat2, n);
+        mnozenjeMat(mat1, mat2, mat3, n);
+}
+// // Napisati program za zbir 2 matrice mxn dimenzija
+
+
+
+
+
+
