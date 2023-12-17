@@ -2875,6 +2875,99 @@
         
 // }
 
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// Program to find the minimum and maximum element of an array
+
+// int unosIprikazNiza(int arr[10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("Unesite %d.element niza: ", i+1);
+//                 scanf("%d", &arr[i]);
+
+//         }
+
+//         for (int i = 0; i < n; i++) {
+//                 printf("%d ", arr[i]);
+//         }
+// }
+
+// int maxNiza(int arr[10], int n) {
+//         int max = arr[0];
+//         for (int i = 0; i < n; i++) {
+//                 if (max< arr[i]) {
+//                         max = arr[i];
+//                 }
+//         } printf("\nMax: %d", max);
+// }
+
+// int minNiza(int arr[10], int n) {
+//         int min = arr[0];
+//         for (int i = 0; i < n; i++) {
+//                 if (min > arr[i]) {
+//                         min = arr[i];
+//                 }
+//         } printf("\nMin: %d", min);
+// }
+
+// int main() {
+//         int arr[10];
+//         int n;
+//         printf("Unesite broj elemenata niza: ");
+//         scanf("%d", &n);
+        
+//         unosIprikazNiza(arr, n);
+//         maxNiza(arr, n);
+//         minNiza(arr, n);
+//         return 0;
+
+// }
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// Write a program in C to find the sum of all elements of the array.
+
+
+// int unosIprikazNiza(int arr[10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("Unesite %d.element niza: ", i+1);
+//                 scanf("%d", &arr[i]);
+//         }
+
+//        for (int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//        }
+
+
+// }
+// int zbir(int arr[10], int n) {
+//         int suma = 0;
+//         for (int i =0; i < n; i++) {
+//                 suma += arr[i];
+//         } return suma;
+        
+// }
+// int main() {
+//         int arr[10];
+//         int n, suma;
+//         printf("Unesite broj elemenata u nizu: ");
+//         scanf("%d", &n);
+
+//         unosIprikazNiza(arr, n);
+//         printf("\nZbir brojeva u vasem nizu jeste: %d", zbir(arr, n)); return 0;
+
+// }
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+////  Write a program in C to copy the elements of one array into another array.
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// 5. Write a program in C to count the total number of duplicate elements in an array.
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// 10. Write a program in C to separate odd and even integers into separate arrays.
+
 
 
 
