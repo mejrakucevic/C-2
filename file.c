@@ -691,34 +691,69 @@
 //   return 0;
 // }
 
+int duzinaSamoglasnika2(char samoglasnici[]) {
+  int brojac = 0;
+  for (int i = 0; samoglasnici[i] != '\0'; i++) {
+    brojac += 1;
+  } return brojac;
+}
+
+// int duzinaSamoglasnika(char samoglasnici[]) { // duzi nacin lmao
+//   char ch = samoglasnici[0];
+//   int brojac = 0;
+//   while (ch != '\0') {
+//     brojac++;
+//     ch = samoglasnici[brojac];
+//   }
+//   return brojac;
+// }
 
 
+int samoglasnik(char c) {
+    if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' || c == 'a' || c ==
+    'e' || c == 'i' || c == 'o' || c == 'u') {
+        return 1;
+    }   
+return 0;
+}
+
+void prikazi_samoglasnike(char s[]){
+    int i;
+    int duzina = strlen(s);
+    for(i = 0; i < duzina; i++){
+        if(samoglasnik(s[i]) == 1){
+            printf("Samoglasnik na poziciji %d je %c\n", i, s[i]);
+        }
+    }
+}
 int main() {
 
-  //  int brojevi[][3] = {
-  //   {1, 2, 3},               // 2 rows, 3 columns
-  //   {4, 5, 6}
-  //  };
+  char s[] = {'A', 'E', 'I', 'O', 'U', 'F', '\0'};
+  // printf("Samoglasnici su : %s\n", samoglasnici);
+  
+  // // DUZINA 
+  // // 1. preko funkcije
+  // printf("Duzina samoglasnika : %s jeste : %d\n", samoglasnici, duzinaSamoglasnika2(samoglasnici));
 
-   int numbers[2][3];
+  // // 2. preko strlen
+  // int duzina = strlen(samoglasnici);
+  // printf("Duzina samoglasnika jeste: %d", duzina);
 
-   numbers[0][0] = 1;
-   numbers[0][1] = 2;
-   numbers[0][2] = 3;
-   numbers[1][0] = 4;
-   numbers[1][1] = 5;
-   numbers[1][2] = 6;
+  // printf("DUZINA SAMOGLASNIKA JESTE: %d", strlen(samoglasnici));
 
-   int n = sizeof(numbers)/sizeof(numbers[0]);
-   int m = sizeof(numbers[0])/sizeof(numbers[0][0]);
+  // char recenica[100];
+  // printf("Unesite neku latinsku izreku: ");
+  // gets(recenica);
 
-   for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
-      printf("%d ", numbers[i][j]);
-    } printf("\n");
-   }
+  // printf("Uneta recenica: %s", recenica);
 
-   return 0;
+  samoglasnik(s);
+  prikazi_samoglasnike(s);
+  
+
+
+
+  return 0;
 
 
 }

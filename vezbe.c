@@ -3019,10 +3019,73 @@
 //         unosIprikazNiza(niz, n);
         
 //         printf("Broj duplikata: %d", proveraDuplikata(niz, n));
-
-
 // }
 // ----------------------------------------------------------------------------------------------------------------------------------
+
+// C program to find second largest number in array
+
+int unosIprikazNiza(int niz[10], int n) {
+         for (int i = 0; i < n; i++) {  
+                printf("Unesite %d. element niza: ", i+1);
+                scanf("%d", &niz[i]);
+                }
+          
+         printf("\nNiz: ");
+         for (int i = 0; i < n; i++) {  
+        
+                printf("%d ", niz[i]);
+                }
+        }
+
+
+// int maxNumber(int niz[10], int n) {
+//         int max = niz[0];
+
+//         for (int i = 0; i < n; i++) { 
+//                 if (max < niz[i]) {
+//                         max = niz[i];
+//                 }        
+// } return max;   
+// }
+
+int secondMax(int niz[10], int n) {
+ int max = niz[0];
+
+        for (int i = 0; i < n; i++) { 
+                if (max < niz[i]) {
+                        max = niz[i];
+                }        
+        int secondMax = niz[0];
+        for (int i = 0; i < n; i++) {   //2 3 5 6 2 2
+                if (secondMax < niz[i] && secondMax < max) {
+                        secondMax = niz[i];
+                } 
+        }}
+
+        // drugi najveci
+        // int secondMax = niz[0];
+        // for (int i = 0; i < n; i++) {   //2 3 5 6 2 2
+        //         if (secondMax < niz[i] && secondMax < max) {
+        //                 secondMax = niz[i];
+        //         } 
+         return secondMax;
+
+}
+
+int main() {
+        int niz[10];
+        int n, max;
+        printf("Unesite broj elemenata niza: ");
+        scanf("%d", &n);
+        
+        unosIprikazNiza(niz, n);
+        // printf("\nNajveci broj u nizu jeste: %d", maxNumber(niz, n));
+
+        printf("\nDrugi najveci broj u nizu jeste: %d", secondMax(niz, n));
+}
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
 
 // 10. Write a program in C to separate odd and even integers into separate arrays.
 
