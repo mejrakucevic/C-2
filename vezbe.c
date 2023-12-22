@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <stdbool.h>
 
 // Strukture podataka i algoritmi vezbanja (C)
 
@@ -3024,18 +3025,18 @@
 
 // C program to find second largest number in array
 
-int unosIprikazNiza(int niz[10], int n) {
-         for (int i = 0; i < n; i++) {  
-                printf("Unesite %d. element niza: ", i+1);
-                scanf("%d", &niz[i]);
-                }
+// int unosIprikazNiza(int niz[10], int n) {
+//          for (int i = 0; i < n; i++) {  
+//                 printf("Unesite %d. element niza: ", i+1);
+//                 scanf("%d", &niz[i]);
+//                 }
           
-         printf("\nNiz: ");
-         for (int i = 0; i < n; i++) {  
+//          printf("\nNiz: ");
+//          for (int i = 0; i < n; i++) {  
         
-                printf("%d ", niz[i]);
-                }
-        }
+//                 printf("%d ", niz[i]);
+//                 }
+//         }
 
 
 // int maxNumber(int niz[10], int n) {
@@ -3048,45 +3049,138 @@ int unosIprikazNiza(int niz[10], int n) {
 // } return max;   
 // }
 
-int secondMax(int niz[10], int n) {
- int max = niz[0];
+// int secondMax(int niz[10], int n) {
+//  int max = niz[0];
 
-        for (int i = 0; i < n; i++) { 
-                if (max < niz[i]) {
-                        max = niz[i];
-                }        
-        int secondMax = niz[0];
-        for (int i = 0; i < n; i++) {   //2 3 5 6 2 2
-                if (secondMax < niz[i] && secondMax < max) {
-                        secondMax = niz[i];
-                } 
-        }}
+//         for (int i = 0; i < n; i++) { 
+//                 if (max < niz[i]) {
+//                         max = niz[i];
+//                 }        
+//         int secondMax = niz[0];
+//         for (int i = 0; i < n; i++) {   //2 3 5 6 2 2
+//                 if (secondMax < niz[i] && secondMax < max) {
+//                         secondMax = niz[i];
+//                 } 
+//         }}
 
-        // drugi najveci
-        // int secondMax = niz[0];
-        // for (int i = 0; i < n; i++) {   //2 3 5 6 2 2
-        //         if (secondMax < niz[i] && secondMax < max) {
-        //                 secondMax = niz[i];
-        //         } 
-         return secondMax;
+//         // drugi najveci
+//         // int secondMax = niz[0];
+//         // for (int i = 0; i < n; i++) {   //2 3 5 6 2 2
+//         //         if (secondMax < niz[i] && secondMax < max) {
+//         //                 secondMax = niz[i];
+//         //         } 
+//          return secondMax;
 
-}
+// }
 
-int main() {
-        int niz[10];
-        int n, max;
-        printf("Unesite broj elemenata niza: ");
-        scanf("%d", &n);
+// int main() {
+//         int niz[10];
+//         int n, max;
+//         printf("Unesite broj elemenata niza: ");
+//         scanf("%d", &n);
         
-        unosIprikazNiza(niz, n);
-        // printf("\nNajveci broj u nizu jeste: %d", maxNumber(niz, n));
+//         unosIprikazNiza(niz, n);
+//         // printf("\nNajveci broj u nizu jeste: %d", maxNumber(niz, n));
 
-        printf("\nDrugi najveci broj u nizu jeste: %d", secondMax(niz, n));
-}
+//         printf("\nDrugi najveci broj u nizu jeste: %d", secondMax(niz, n));
+// }
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+// a) C program za pretragu postojanja ponavljanja odredjenog karaktera u stringu
 
+// int ponavljanjaKaraktera(char s[], int n) {
+//         int ponavljanja = 0;
+//         for (int i = 0; i < n; i++) {
+//                 if (s[i] == s[i+i]) {
+//                     ponavljanja += 1;
+//                 }
+//         } return ponavljanja;
+// }
+
+// int main() {
+//         char s[] = {'A', 'B', 'H', 'C', 'S', 'H', 'F', 'B', 'G', 'W', 'H'};
+//         int n = strlen(s);
+//         int ponavljanja;
+
+//         printf("Postoje %d karaktera koja se ponavljaju vise puta u stringu", ponavljanjaKaraktera(s, n));
+        
+//         return 0;
+// }
+
+// C program za pretragu postojanja ponavljanja odredjenog karaktera od unosa korisnika u stringu
+
+// int ponavljanje(char s[100], int n, char k) {
+//         int brojac = 0;
+       
+//         for (int i = 0; i < n; i++) {
+//                 if (k == s[i]) {
+//                    printf("Karakter je na indeksnoj poziciji: %d\n", i);
+//                 }
+//         } 
+// }
+
+// int main() {
+     
+//      char s[100];
+//      printf("Unesite vasu recenicu: ");
+//      gets(s);
+
+//      char k;
+//      printf("Unesite zeljeni karakter za proveru ponavljanja: ");
+//      scanf("%c", &k);
+
+//      int n = strlen(s);
+
+//      ponavljanje(s, n, k);
+
+//     return 0;
+
+// }
+
+// Ulazni
+
+// Ulazni niz: Volim programiranje. Volim Codeforvin.
+
+// Unesite znak za pretragu: o
+
+// Izlaz
+
+// 'o' se nalazi na indeksu: 3, 9, 23, 28, 32
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// C program za proveru da li je string palindrom ili ne
+
+// int palindrom(char s[100], int n) {
+//         int sredina = n / 2;
+//         int p;
+
+//           for (int i = 0; i < sredina; i++) {
+//                 if (s[i] == s[n - i - 1]) {
+//                         p = 1;
+//                 } 
+//           }
+
+//           if (p == 1) {
+//                 printf("Jeste palindrom!");
+//         } else { 
+//                 printf("Nije palindrom!"); }
+
+// }
+// int main() {
+//         char s[100];
+//         printf("Unesite vas string/recenicu: ");
+//         gets(s);
+//         int p;
+//         int n = strlen(s);
+        
+
+//         palindrom(s, n);
+        
+
+//         return 0;
+// }
 // 10. Write a program in C to separate odd and even integers into separate arrays.
 
 
