@@ -5,7 +5,7 @@
 #include <time.h>
 #include <string.h>
 #include <stdbool.h>
-
+#include <ctype.h>
 // Strukture podataka i algoritmi vezbanja (C)
 
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -3181,6 +3181,73 @@
 
 //         return 0;
 // }
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// C program za pretvaranje string malih slova u velika slova
+
+// int malaUvelika(char s[100], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("%c", toupper(s[i]));
+//         }
+
+// }
+
+// int main() {
+//         char s[100];
+//         printf("Unesite string: ");
+//         gets(s);
+
+//         int n = strlen(s);
+
+//         malaUvelika(s, n);
+//         return 0;
+// }
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// Program za pronalaženje dužine stringa bez koriscenja strlen
+
+// int unosIprikazS(char s[100]) {
+//         printf("Unesite string: ");
+//         gets(s);
+//         printf("%s", s);
+// }
+
+// int duzina(char s[100]) {
+//         int brojac = 0;
+//         for (int i = 0; s[i] != '\0'; i++) {
+//                 brojac += 1;    
+//         } printf("\nDuzina stringa je %d", brojac);
+// }
+// int main() {
+//         char s[100];
+
+//         unosIprikazS(s);
+//         duzina(s);
+//         return 0;
+        
+// }
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// C program to find reverse of array
+
+int obrnuto(char s[100], int n) {
+        for (int i = 0; i < n; i++) {
+                s[i] = s[n - i - 1]; 
+        } printf("%s", s);
+}
+int main() {
+        char s[100];
+
+        printf("Unesite string: ");
+        gets(s);
+
+        int n = strlen(s);
+        obrnuto(s, n);
+        
+}
+
 // 10. Write a program in C to separate odd and even integers into separate arrays.
 
 
