@@ -3232,21 +3232,31 @@
 
 // C program to find reverse of array
 
-int obrnuto(char s[100], int n) {
-        for (int i = 0; i < n; i++) {
-                s[i] = s[n - i - 1]; 
-        } printf("%s", s);
-}
-int main() {
-        char s[100];
+// int unos(int niz[10], int n) {
+//         for (int i = 0; i < n; i++) {
+//                 printf("Unesite element: ");
+//                 scanf("%d", &niz[i]);
+//         }
+// }
 
-        printf("Unesite string: ");
-        gets(s);
+// int obrnuto(int niz[10], int n) {
+//         for (int i = n-1; i >= 0; i--) {
+//                 printf("%d", niz[i]);
+//         } 
+// }
+// int main() {
+//         int niz[10];
+//         int n;
 
-        int n = strlen(s);
-        obrnuto(s, n);
-        
-}
+//         printf("Unesite velicinu niza: ");
+//         scanf("%d", &n);
+
+//         unos(niz, n);
+//         obrnuto(niz, n);
+//         return 0;  
+// }
+// ----------------------------------------------------------------------------------------------------------------------------------
+
 
 // 10. Write a program in C to separate odd and even integers into separate arrays.
 
