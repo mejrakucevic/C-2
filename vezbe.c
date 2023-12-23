@@ -3257,6 +3257,63 @@
 // }
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+// Prebrojati koliko ima reči u unetom stringu. Npr. za string 'Joca voli sladoled', dobija se rezultat 3. Podrazumeva se da u stringu nema vodećih, pratećih ili višestrukih razmaka.
+
+// int brojacReci(char recenica[100], int n){
+//         int reci = 1;
+
+//         for (int i = 0; i < n; i++) {
+//                 if (recenica[i] == ' ') {
+//                         reci += 1;
+//                 }
+//         } return reci;
+// }
+
+
+// int main() {
+//         char recenica[100];
+
+//         printf("Unesite vasu recenicu/string: ");
+//         gets(recenica);
+
+//         int n = strlen(recenica);
+//         int reci;
+
+//         printf("Broj reci u vasoj recenici: %d", brojacReci(recenica, n));
+//         return 0;
+
+// }
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// 3. Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo). Npr. za string 'Mama ima momu', dobija se rezultat 5.
+
+// 4. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
+
+// 5. Prebrojati koliko ima malih slova u unetom stringu. Slova koja se koriste u stringu pripadaju isključivo engleskoj abecedi.
+
+// Zadatak 6
+// Proveriti da li je uneti string palindrom (potpuno je isti kada se čita od pozadi). Npr. 'anavolimilovana' je palindrom.
+
+// Zadatak 7
+// Proveriti da li je uneti string palindrom, vodeći računa o razmacima. Npr. 'ana voli milovana' je palindrom.
+
+// Zadatak 8
+// Sva velika slova u stringu treba svesti na mala slova. Npr. za uneto 'WEBnSTUDY.com', dobija se novi string 'webnstudy.com'. Slova koja se koriste u stringu pripadaju isključivo engleskoj abecedi.
+
+// Zadatak 9
+// Pronaći poziciju poslednjeg razmaka u stringu, pretražujući od kraja stringa. Npr. za uneto 'Pera ima devojku', rezultat je 9 (pozicija prvog znaka je 1).
+
+// Zadatak 10
+// Ispisati dužinu prve reči unetog stringa. Npr. za uneto 'Pera ima devojku', rezultat je 4. Podrazumeva se da uneti string nema vodeće razmake.
+
+// Zadatak 11
+// Za uneti string A treba kreirati novi string B koji se sastoji od prve i poslednje reči (odvojenih razmakom) unetog stringa. Npr. za A='Svuda pođi, kući dođi', dobija se B='Svuda dođi'. Podrazumeva se da uneti string nema vodeće ili prateće razmake.
+
+// Zadatak 12
+// Iz unetog stringa treba izdvojiti N znakova sa leve strane. Npr. za string 'Pera ima devojku' i N=6, dobija se 'Pera i'. Ako je N veće od dužine stringa, kao rezultat se dobija ceo string.
+
+// Zadatak 13
+// Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
 
 // 10. Write a program in C to separate odd and even integers into separate arrays.
 
