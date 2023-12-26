@@ -6,6 +6,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
+
+#
 // Strukture podataka i algoritmi vezbanja (C)
 
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -3318,7 +3320,49 @@
 // 10. Write a program in C to separate odd and even integers into separate arrays.
 
 
+// NIZOVI
+// 1. dan:
+// Дат је низ целих бројева. Написати процедуру за приказ елемената низа.
+// int sumaNiza(int arr[], int n) {
+//          int suma = 0;
+//          for (int i = 0; i < n; i++) {
+//             suma += i;
+//          } return suma;
+// }
 
+// int main() {
+//        int arr[] = {1, 2, 3, 6, 6, 6};
+//        int n = sizeof(arr)/sizeof(int);
 
+//        printf("Suma brojeva niza jeste: %d", sumaNiza(arr, n));
 
+//         return 0;
 
+// }
+
+int postojanjeBroja(int niz[], int n, int broj) {
+     for (int i = 0; i < n; i++) {
+        if (niz[i] == broj) {
+            return 0;
+        }
+     } return 1;
+
+}
+
+int main() {
+
+    int niz[] = {1, 2, 3, 4, 5};
+    int n = sizeof(niz)/sizeof(int);
+
+    int broj;
+    printf("Unesite broj za pretragu: ");
+    scanf("%d", &broj);
+
+    if (postojanjeBroja(niz, n, broj) == 0) {
+        printf("Broj postoji u nizu!");
+    } else  {
+        printf("Broj ne postoji u nizu!");
+    }
+    return 0;
+
+}
