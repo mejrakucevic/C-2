@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-#
+
 // Strukture podataka i algoritmi vezbanja (C)
 
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -3340,29 +3340,75 @@
 
 // }
 
-int postojanjeBroja(int niz[], int n, int broj) {
-     for (int i = 0; i < n; i++) {
-        if (niz[i] == broj) {
-            return 0;
-        }
-     } return 1;
+// // int noviElement(int niz[], int n, int broj) {
 
-}
+//             niz[n] = broj;
+//             n++;
 
-int main() {
+//          // prikaz niza sa dodatim elementom
+//          for (int i = 0; i < n; i++) {
+//             printf("%d ", niz[i]);
+//          }
 
-    int niz[] = {1, 2, 3, 4, 5};
-    int n = sizeof(niz)/sizeof(int);
+// }
 
-    int broj;
-    printf("Unesite broj za pretragu: ");
-    scanf("%d", &broj);
 
-    if (postojanjeBroja(niz, n, broj) == 0) {
-        printf("Broj postoji u nizu!");
-    } else  {
-        printf("Broj ne postoji u nizu!");
-    }
-    return 0;
+// int noviNizU(int niz[], int n, int niz2[]) {
+//     int ponavljanja = 0;
 
-}
+//     for (int i = 0; i < n; i++) {
+//                 niz2 += niz[i];
+//     }
+//     for (int i = 0; i < n-1; i++) {
+//             for (int j = i + 1; j < n; j++) {
+//                 if (niz[i] == niz[j]) {
+//                     ponavljanja += 1;
+//                 } else {
+//                     printf("%d ", niz2[i]);
+//                 }
+//             }
+
+//          }
+
+
+//  }
+
+// int main() {
+//      int niz[] = {1, 2, 3, 4, 3, 5, 2, 4, 77};
+//      int niz2[] = { };
+//      int n = sizeof(niz)/sizeof(int);
+//      int broj;
+//      printf("Unesite broj: ");
+//      scanf("%d", &broj);
+
+//      noviElement(niz, n, broj);
+//      noviNizU(niz, n, niz2);
+
+
+
+// } // NEMA LJEBA OD OVOGA, VRATI SE PONOVO NA NJEGA KASNIJE
+
+// void unosNiza(int niz[], int n) {
+//     for (int i = 0; i < n; i++) {
+//         printf("Unesite %d. element: ", i+1);
+//         scanf("%d", &niz[i]);
+//     }
+// }
+
+// void prikazNiza(int niz[], int n) {
+// for (int i = 0; i < n; i++) {
+//     printf("%d ", niz[i]);
+// } }
+
+// int main() {
+//      int niz[MAX_SIZE];
+//      int n;
+//      printf("Unesite velicinu niza(<100): ");
+//      scanf("%d", &n);
+
+//      unosNiza(niz, n);
+//      prikazNiza(niz, n);
+
+//      return 0;
+
+// }
