@@ -3412,3 +3412,102 @@
 //      return 0;
 
 // }
+// int unosParnih(int niz[]) {
+//     int broj;
+//     int n = 0;
+
+//     printf("Unesite broj niza: ");
+
+//     do {
+//         scanf("%d", &broj);
+
+//         if (broj % 2 == 0 && broj != 0 && n < MAX_SIZE) {
+//             niz[n] = broj;
+//             n++;
+//         }
+//     } while (broj != 0 && n < MAX_SIZE);
+
+//     return n;
+
+// }
+
+// int prikazNiza(int niz[], int n) {
+// for (int i = 0; i < n; i++) {
+//        printf("%d ", niz[i]);
+//     }
+// }
+
+// int main() {
+//     int n;
+//     int niz[MAX_SIZE];
+//     n = unosParnih(niz);
+
+//     prikazNiza(niz, n);
+
+//       return 0;
+
+// }
+// int unosIispis(int niz[]) {
+//       int n;
+//       printf("Unesite velicinu niza: ");
+//       scanf("%d", &n);
+
+//       for (int i = 0; i < n; i++) {
+//         printf("Unesite %d. element niza: ", i+1);
+//         scanf("%d", &niz[i]);
+//       }
+//         return n;
+//       //for (int i = 0; i < n; i++) {
+//        // printf("%d ", niz[i]);
+
+//       //}
+// }
+
+
+
+// void noviElement(int niz[], int n, int element) {
+
+//      n = n + 1;
+
+
+//      for (int i = n; i > 0; i--) {
+//         niz[i] = niz[i-1];
+
+//       }
+
+//       niz[0] = element;
+
+//       for (int i = 0; i < n; i++) {
+//         printf("%d ", niz[i]);
+
+//       }
+
+// }
+// int josElemenata(int niz[], int n) {
+//      int x, element;
+//      printf("Unesite koliko elemenata zelite dodati: ");
+//      scanf("%d", &x);
+
+//      for (int i = 1; i <= x; i++) {
+//         printf("\nUnesite %d. element niza: ", i);
+
+//         scanf("%d", &element);
+//         noviElement(niz, n, element);
+
+// } }
+
+// int main() {
+//     int niz[MAX_SIZE];
+//     int n, element;
+
+//     n = unosIispis(niz);
+
+//     printf("\nUnesite element koji zelite dodati nizu: ");
+//     scanf("%d", &element);
+
+//     noviElement(niz, n, element);
+
+//     josElemenata(niz, n);
+
+//     return 0;
+// }
