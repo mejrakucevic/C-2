@@ -3511,3 +3511,79 @@
 
 //     return 0;
 // }
+
+// int najmanjiParniEl(int niz[], int n) {
+//        int min = -1;
+//        for (int i = 0; i < n; i++) {
+//             if (niz[i] % 2 == 0 ) { {
+//              if(min == -1 || min > niz[i]) {
+//                 min = niz[i];
+//             } } }
+
+//        } return min;
+// }
+
+// int main() {
+
+
+//       int niz[MAX_SIZE] = {1, 22, 4, 8, 2};
+//       int n = sizeof(niz)/sizeof(int);
+
+//       for (int i = 0; i < n; i++) {
+//         printf("%d ", niz[i]);
+//       }
+
+//       printf("\nNajmanji parni element niza: %d", najmanjiParniEl(niz, n));
+
+//       return 0;
+
+// }
+
+// 
+
+//    int a(int niz[], int n) {
+//       int ponavljanja = 0;
+
+//       for (int i =0; i < n; i++) {
+//         for (int j = i+1; j < n; j++) {
+//             if (niz[i] == niz[j]) {
+//                 ponavljanja += 1;
+//             }
+//         }
+
+//       } return ponavljanja/2;
+
+//    }
+
+
+//    int b(int niz[], int n, int ponavljanja) {
+//           for (int i = 0; i < n; i++) {
+//             if (ponavljanja/2 == 2) {
+//                 printf("%d", niz[i]);
+//             }
+//           }
+
+//    }
+//    int main() {
+//      int niz[MAX_SIZE] = {1, 2, 2, 4, 6};
+//      int n = sizeof(niz)/sizeof(int);
+
+
+//      int ponavljanja = a(niz, n);
+//      printf("Broj ponavljanja ba jeste: %d\n", ponavljanja);
+
+//      b(niz, n, ponavljanja);
+
+//      return 0;
+//    }
+
+
+
+
+
+
+
+
+
+
+
