@@ -3964,3 +3964,33 @@
 
 // }
 
+// int palindrom(char c[], int n, int sredina, int p) {
+//      int i;
+//      for (i = 0; i < sredina; i++) {
+//         if (c[i] == c[n - i - 1]) {
+//              p = 1;
+//             }
+
+//      }
+
+//      if (p == 1) {
+//                 printf("Jeste palindrom!");
+//         } else {
+//                  printf("Nije palindrom!"); }
+
+// }
+
+// int main() {
+//      char c[50];
+//      printf("Unesite rec za proveru palindrma: ");
+//      gets(c);
+
+//      int n = strlen(c);
+//      int sredina = n/2;
+//      int p =0;
+
+//      palindrom(c, n, sredina, p);
+
+//      return 0;
+
+     }
