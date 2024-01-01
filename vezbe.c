@@ -3743,3 +3743,224 @@
 //       return 0;
 
 // }
+
+
+//  void unosNiza(int niz[], int n) {
+//      for (int i = 0; i < n; i++) {
+//         printf("Unesite %d element niza: ", i+1);
+//        scanf("%d", &niz[i]);
+//    } }
+
+
+//  int izbaciElement(int niz[], int n) {
+//        for (int i = 0; i < n; i++) {
+//         niz[i] = niz[i+1];
+//         }
+
+
+//          n--;
+
+//        for (int i = 0; i < n; i++) {
+
+//          printf("%d ", niz[i]);}
+
+
+//       return n;
+//  }
+
+// // б) Имплементирати потпрограм postoji_parni_broj којa проверава да ли у низу постоји парни
+// // број.
+// int postojiParniBr(int niz[], int n) {
+//           for (int i = 0; i < n; i++) {
+//             if (niz[i] % 2 == 0) {
+//                 return 1;
+//             }
+//           } return 0;
+
+// }
+
+// // в) Имплементирати потпрограм min_parni_broj који налази најмањи парни број у низу.
+// int najmanjiParniBr(int niz[], int n) {
+
+//      int min = -1;
+
+//      for (int i = 0; i < n; i++) {
+//         if (niz[i] % 2 == 0) {
+//             if (min > niz[i] || min == -1) {
+//                 min = niz[i];
+//             }
+//         }
+//      } printf("Najmanji parni br je: %d", min);
+// }
+
+
+
+//  int main() {
+//        int niz[MAX_SIZE] = {1, 2,3,4,5,6};
+//       int n;
+//       printf("------UNOS NIZA------\n");
+//       printf("Unesite broj elemenata niza: ");
+//       scanf("%d", &n);
+//       unosNiza(niz, n);
+
+
+//         printf("\n---------MENI---------\n");
+//         int meni;
+//         printf("Izaberite broj funckije: \n");
+//         printf("1 - Izbacivanje Elementa. \n2 - Provera postojanja parnog broja.\n3 - Najmanji Parni Broj.\n\nUnos Broja: ");
+//         scanf("%d", &meni);
+
+//        switch(meni) {
+//           case 1:
+//             izbaciElement(niz, n);
+//             break;
+
+//           case 2:
+//             postojiParniBr(niz, n);
+//             if (postojiParniBr(niz, n) == 1) {
+//         printf("U nizu postoji parni broj!");
+//       } else printf("U nizu ne postoji parni broj!");
+//             break;
+
+
+//           case 3:
+//             najmanjiParniBr(niz, n);
+//             break;
+//        }
+
+//       //unosNiza(niz, n);
+
+
+
+// //       n = izbaciElement(niz, n);
+
+//  return 0;
+// }
+
+// int sumaRedova(int mat[3][3], int n, int m) {
+//             int suma = 0;
+
+//        for (int i = 0; i < n; i++) {
+//             printf("\n");
+//         for (int j = 0; j < m; j++) {
+//             printf("%d ", mat[i][j]);
+//             suma += mat[i][j];
+//         }
+//        }
+
+//        printf("\n");
+
+//      return suma;
+
+
+// }
+
+// int main() {
+
+//        int mat[3][3];
+
+//        int n, m;
+
+//        printf("Unesite dimenzije n matrice: ");
+//        scanf("%d", &n);
+
+//        printf("Unesite dimenzije m matrice: ");
+//        scanf("%d", &m);
+
+//        for (int i = 0; i < n; i++) {
+//         for (int j = 0; j < m; j++) {
+//             printf("Unesite element matrice: ");
+//             scanf("%d", &mat[i][j]);
+//         }
+//        }
+
+
+//        int suma = sumaRedova(mat, n, m);
+//        printf("Suma je %d", suma);
+
+//        return 0;
+
+// }
+// // int main() {
+//     char samoglasnici[] = {'A', 'E', 'I', 'O', 'U', 'F'}; // Bez null-terminatora
+
+//     printf("%s ", samoglasnici);
+
+//     // Manuelno računanje dužine niza
+//     int brojac = 0;
+//     while (samoglasnici[brojac] != '\0') {
+//         brojac += 1;
+//     }
+
+//     printf("Duzina stringa je %d\n", brojac-1);
+
+//     return 0;
+// }
+
+
+// 206.Написати функцију која испитује да ли је одређени знак самогласник. Унети неки стринг и
+// приказати самогласнике.
+// 
+// int sumaKolone(int mat[5][5], int n, int k) {
+//     int i;
+//     int sumaK = 0;
+
+//     for (i = 0; i < n; i++) {
+//         sumaK += mat[i][k];
+//     } return sumaK;
+// }
+
+// int prikazIsumaSvihKolona(int mat[5][5], int n, int m) {
+//     int novaSuma = 0;
+//          int i;
+//           for (i = 0; i < n; i++) {
+//                 printf("\n");
+//             for (int j = 0; j < m; j++) {
+//                 printf("%d ", mat[i][j]);
+//             }
+//           }
+
+
+//           for (i = 0; i < n; i++) {
+//                 for (int j = 0; j < m; j++) {
+//                novaSuma += mat[i][j];
+//           } }return novaSuma;
+// }
+
+// int main() {
+//      int mat[5][5] = {
+//       {1, 2},
+//       {4, 5},
+//       {7, 8}
+//      };
+
+//      int n = 3;
+//      int m = 2;
+//      int sumaaK;
+//      int meni;
+//      int k;
+//      int novaSumaa;
+//      printf("\n Izaberite koju funkciju zelite da pokrenete:\n 1-Suma odredjene kolone \n 2-Suma svih kolona i prikaz matrice\n");
+//      scanf(" %d", &meni);
+
+//      switch(meni) {
+//        case 1:
+
+//            printf("Unesite redni broj kolone za racunanje sume (indexiranje pocinje od 0):");
+//            scanf("%d", &k);
+
+//             sumaaK = sumaKolone(mat, n, k);
+//             printf("Suma %d.kolone je %d.", k+1, sumaaK);
+//              break;
+
+//        case 2:
+//          novaSumaa = prikazIsumaSvihKolona(mat, n, m);
+
+//          printf("Suma svih kolona je : %d", novaSumaa);
+//           break;
+
+//      }
+//       return 0;
+
+// }
+
