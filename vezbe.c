@@ -3992,31 +3992,27 @@
 //      palindrom(c, n, sredina, p);
 
 //      return 0;
+// // int proveraKaraktera(char c) {
+//         if (c >= 'A' && c <= 'Z' ||c >= 'a' && c <= 'z' ) {
+//                 printf("Karakter je slovo\n");
 
-//      int sumaNreda(int mat[3][3], int n, int red) {
+//         } else printf("Karakter nije slovo\n");
 
-//          int suma = 0;
 
-//          for (int j = 0; j < n; j++) {
-//                 suma += mat[red][j];
-//          } return suma;
+
 // }
+// int proveraKaraktera2(char c){
+// if (c >= '0' && c <= '9') {
+//                 printf("Karakter je broj");
+//         } else printf("Karakter nije broj");}
 
 // int main() {
 
-//         int mat[3][3] = {
-//          {1,2,3},
-//          {4,5,6},
-//          {7, 8, 9}
-//         };
 
-//         int n = 3;
-//         int red;
-//         printf("Unesite koji red zelite da izracunate: ");
-//         scanf("%d", &red);
+//      char c;
+//     printf("Unesite neki karakter: ");
+//     scanf("%c", &c);
 
-//         int sumaa = sumaNreda(mat, n, red);
-//         printf("Suma reda je %d", sumaa);
-
-//         return 0;
+//     proveraKaraktera(c);
+//     proveraKaraktera2(c);
 // }
