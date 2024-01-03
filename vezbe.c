@@ -3993,4 +3993,30 @@
 
 //      return 0;
 
-     }
+//      int sumaNreda(int mat[3][3], int n, int red) {
+
+//          int suma = 0;
+
+//          for (int j = 0; j < n; j++) {
+//                 suma += mat[red][j];
+//          } return suma;
+// }
+
+// int main() {
+
+//         int mat[3][3] = {
+//          {1,2,3},
+//          {4,5,6},
+//          {7, 8, 9}
+//         };
+
+//         int n = 3;
+//         int red;
+//         printf("Unesite koji red zelite da izracunate: ");
+//         scanf("%d", &red);
+
+//         int sumaa = sumaNreda(mat, n, red);
+//         printf("Suma reda je %d", sumaa);
+
+//         return 0;
+// }
