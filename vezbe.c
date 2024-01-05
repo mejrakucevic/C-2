@@ -3997,6 +3997,31 @@
 //                 printf("Karakter je slovo\n");
 
 //         } else printf("Karakter nije slovo\n");
+int izbaciSaPocetka(int niz[10], int n) {
+
+         for (int i = 0; i < n; i++) {
+            niz[i] =niz[i+1];
+         }
+         n--;
+
+
+         for (int i = 0; i < n; i++) {
+            printf("%d ", niz[i]);
+         }
+
+}
+
+int main() {
+       int niz[10] = {1, 2, 3, 4, 5, 6 ,7, 8, 9, 10};
+       int n = sizeof(niz)/sizeof(int);
+
+       izbaciSaPocetka(niz, n);
+
+       return 0;
+
+
+
+}
 
 
 
