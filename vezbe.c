@@ -3997,31 +3997,38 @@
 //                 printf("Karakter je slovo\n");
 
 //         } else printf("Karakter nije slovo\n");
-int izbaciSaPocetka(int niz[10], int n) {
 
-         for (int i = 0; i < n; i++) {
-            niz[i] =niz[i+1];
-         }
-         n--;
+int postojiParniBroj(int niz[10], int n) {
 
-
-         for (int i = 0; i < n; i++) {
-            printf("%d ", niz[i]);
-         }
+  for (int i = 0; i < n; i++){
+    if (niz[i] % 2 == 0) {
+        return 1;
+    }
+  } return 0;
 
 }
 
 int main() {
-       int niz[10] = {1, 2, 3, 4, 5, 6 ,7, 8, 9, 10};
-       int n = sizeof(niz)/sizeof(int);
+    int niz[10] = {1, 3, 5};
+    int n = sizeof(niz)/sizeof(int);
 
-       izbaciSaPocetka(niz, n);
 
-       return 0;
 
+
+             
+             if (postojiParniBroj(niz, n) == 1) {
+         printf("U nizu postoji parni broj!");
+       } else printf("U nizu ne postoji parni broj!");
+
+
+    return 0;
 
 
 }
+
+
+
+
 
 
 
