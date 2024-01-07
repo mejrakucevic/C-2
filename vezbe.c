@@ -3997,33 +3997,65 @@
 //                 printf("Karakter je slovo\n");
 
 //         } else printf("Karakter nije slovo\n");
-#define RED_N 3
-#define KOLONA_N 3
+// #define RED_N 3
+// #define KOLONA_N 3
 
-int jeRastuci(int mat[][KOLONA_N], int red) {
-     for (int i = 1; i < KOLONA_N; i++) {
-        if (mat[red][i-1] >= mat[red][i]) {
-            return 0;
-        }
-     } return 1;
+// int jeRastuci(int mat[][KOLONA_N], int red) {
+//      for (int i = 1; i < KOLONA_N; i++) {
+//         if (mat[red][i-1] >= mat[red][i]) {
+//             return 0;
+//         }
+//      } return 1;
 
-}
+// }
 
-int main() {
-        int mat[RED_N][KOLONA_N] = {
-        {1, 2, 4},
-        {4, 5, 6},
-        {7, 8, 9}
-        };
-        int red = 0;
+// int main() {
+//         int mat[RED_N][KOLONA_N] = {
+//         {1, 2, 4},
+//         {4, 5, 6},
+//         {7, 8, 9}
+//         };
+//         int red = 0;
 
-        if (jeRastuci(mat, red) == 0) {
-            printf("Nije rastuci");
-        } else printf("Jeste rastuci");
+//         if (jeRastuci(mat, red) == 0) {
+//             printf("Nije rastuci");
+//         } else printf("Jeste rastuci");
 
-        return 0;
+//         return 0;
 
-}
+// }
+
+
+
+
+// // int podnizParnih(int mat[][KOLONA], int redd) {
+//         int brojac = 0;
+//        for (int j = 0; j < KOLONA; j++) {
+//         if (mat[redd][j] % 2 == 0) {
+//             brojac++;
+//         }
+//        } return brojac;
+
+// }
+
+// int main() {
+
+//        int mat[RED][KOLONA] = {
+//        {1, 2, 3, 4, 5},
+//        {4, 5, 6},
+//        {7, 8, 9}
+//        };
+//        int redd = 0;
+
+//        int broj = podnizParnih(mat, redd);
+//        if (broj > 2) {
+//          printf("Ima");
+//        } else printf("Nema");
+//        return 0;
+// }
+
+
+
 
 
 
