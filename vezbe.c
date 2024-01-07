@@ -3997,34 +3997,35 @@
 //                 printf("Karakter je slovo\n");
 
 //         } else printf("Karakter nije slovo\n");
+#define RED_N 3
+#define KOLONA_N 3
 
-int postojiParniBroj(int niz[10], int n) {
-
-  for (int i = 0; i < n; i++){
-    if (niz[i] % 2 == 0) {
-        return 1;
-    }
-  } return 0;
+int jeRastuci(int mat[][KOLONA_N], int red) {
+     for (int i = 1; i < KOLONA_N; i++) {
+        if (mat[red][i-1] >= mat[red][i]) {
+            return 0;
+        }
+     } return 1;
 
 }
 
 int main() {
-    int niz[10] = {1, 3, 5};
-    int n = sizeof(niz)/sizeof(int);
+        int mat[RED_N][KOLONA_N] = {
+        {1, 2, 4},
+        {4, 5, 6},
+        {7, 8, 9}
+        };
+        int red = 0;
 
+        if (jeRastuci(mat, red) == 0) {
+            printf("Nije rastuci");
+        } else printf("Jeste rastuci");
 
-
-
-             
-             if (postojiParniBroj(niz, n) == 1) {
-         printf("U nizu postoji parni broj!");
-       } else printf("U nizu ne postoji parni broj!");
-
-
-    return 0;
-
+        return 0;
 
 }
+
+
 
 
 
